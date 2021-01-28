@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Good Vibes Form</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body class="main-wrapper">
+    <div class="center">
+        <h1>Good Vibes Form</h1>
+    </div>
+    <form action="">
+        <div class="container">
+            <div class="center">
+                <p>Tell us something positive that happened to you today.</p>
+            </div>
+            <table>
+                <!-- name -->
+                <tr>
+                    <td class="left">Name</td>
+                    <td><input class="input" maxlength="15" type="text" placeholder="Enter your name" required /></td>
+                </tr>
+                <!-- email -->
+                <tr>
+                    <td class="left">Email</td>
+                    <td><input class="input" type="email" placeholder="Enter your email address" required /></td>
+                </tr>
+                <!-- scale -->
+                <tr>
+                    <td class="left">On a scale of 1-10, how good was it?</td>
+                    <td><input class="input" type="number" min="1" max="10" placeholder="Enter a number between 1 and 10" required /></td>
+                </tr>
+                <!-- select from dropdown -->
+                <tr>
+                    <td class="left">Where did it happen?</td>
+                    <td>
+                        <select style="padding: 8px;" id="select" name="select_one">
+                            <option value="volvo">At Home</option>
+                            <option value="saab">On my commute</option>
+                            <option value="fiat">At work</option>
+                            <option value="audi">On the steer</option>
+                            <option value="audi">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- select one -->
+                <tr>
+                    <td class="left">At what time of day did it happen?</td>
+                    <td>
+                        <input type="radio" id="time" name="time" value="morning">
+                        <label for="male">Morning</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="radio" id="time" name="time" value="afternoon">
+                        <label for="male">Afternoon</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="radio" id="time" name="time" value="evening">
+                        <label for="male">Evening</label>
+                    </td>
+                </tr>
+                <!-- select multiple emotions -->
+                <tr>
+                    <td class="left">What emotions did you experience?<br> (Select all that apply)</td>
+                    <td>
+                        <input type="checkbox" id="emotions" name="emotion1" value="excited">
+                        <label for="emotion1"> Excited</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="emotions" name="emotion2" value="humbled">
+                        <label for="emotion2"> Humbled</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="emotions" name="emotion3" value="elated">
+                        <label for="emotion3"> Elated</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="emotions" name="emotion4" value="loved">
+                        <label for="emotion4"> Loved</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="emotions" name="emotion5" value="enthusiastic">
+                        <label for="emotion5">Enthusiastic</label>
+                    </td>
+                </tr>
+                <!-- your experience description -->
+                <tr>
+                    <td class="left">Please describe your positive experience</td>
+                    <td>
+                        <textarea class="input" id="experience" name="experience" rows="2" cols="50">Enter your experience here...</textarea>
+                    </td>
+                </tr>
+            </table>
+            <div class="center">
+                <button type="submit" onclick="message()">Submit</button>
+            </div>
+        </div>
+    </form> 
+<script>
+    function message() {
+        
+            alert("Form submitted successfully!");
+        // prompt("Enter your name");
+        // return false;
+        
+    }
+</script>
+</body>
+</html>
